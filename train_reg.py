@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/home/zhunanyang/bbbb8888")
+#sys.path.append("/home/zhunanyang/bbbb8888")
 
 from pathlib import Path
 from data import power_dataset_reg

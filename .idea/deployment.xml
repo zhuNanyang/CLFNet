@@ -5,7 +5,7 @@
       <paths name="bbbb">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/zhunanyang/bbbb" local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

@@ -69,8 +69,6 @@ setup(
     long_description_content_type="text/markdown",
     license="Apache 2.0",
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests", "benchmarks", "benchmarks.*"]),
-    author="siyan",
-    author_email="xsy233@gmail.com",
     install_requires=install_requires,
     entry_points={"console_scripts": ["ttt-cli=ttt.__main__:main"]},
     include_package_data=True,

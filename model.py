@@ -171,17 +171,3 @@ class power_model(Model):
             "input_x": x_,
             "input_y": y,
         }
-
-    @classmethod
-    def transfer_model(cls, p, model: Model):
-        pre_model = torch.load(p + "/" + "best_model_state.pt")
-        model0 = model.state_dict()
-        state = {}
-        for k0, k1 in pre_model.items():
-            if k0 in model0.keys():
-                state[k0] = k1
-            else:
-                continue
-        model0.update(state)
-        model.load_state_dict(model0)
-        return model

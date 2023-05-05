@@ -1,10 +1,9 @@
 import sys
-#sys.path.append("/home/zhunanyang/bbbb8888")
 
 from pathlib import Path
 from data import power_dataset_reg
 
-from params import represent_param, reg_param
+from params import  reg_param
 import pandas as pd
 from torch.utils.data import DataLoader
 from nn.trainer import Trainer
@@ -21,12 +20,10 @@ from nn.callbacks import (
 )
 
 
-#data_path = Path.cwd() / "data"
-#random_excel(power_param.data_p / "df.csv")
-train_df = pd.read_excel(represent_param.data_p / "train.xlsx")
+train_df = pd.read_excel(reg_param.data_p / "train.xlsx")
 #df = pd.read_csv(power_param.data_p / "train_all.csv")
 train_data = power_dataset_reg(
-    train_df, target=reg_param.target, x=represent_param.x
+    train_df, target=reg_param.target, x=reg_param.x
 )
 train_dataloader = DataLoader(
     train_data, batch_size=reg_param.batch_size, shuffle=True, drop_last=True

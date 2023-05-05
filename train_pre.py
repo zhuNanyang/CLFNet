@@ -50,7 +50,7 @@ trainer = Trainer(
     valiation_dataloader={"dev": train8_dataloader, "test": train8_dataloader},
 
     optimizer=AdamW(lr=represent_param.learning_rate),
-    n_epochs=2,
+    n_epochs=128,
     callbacks=callbacks,
     batch_size=represent_param.batch_size,
     print_every=1,

@@ -18,9 +18,9 @@ class represent_param:
         "相对湿度（%）",
     ]
     target = "实际功率(MW)"
-    data_p = Path("~/bbbb/data")
+    data_p = "" # the path of train data
 
-    model_p = "~/bbbb/model/represent_lstm"
+    model_p = "" # the model of pre-training stage
     batch_size = 64  # 88888: 3, m_loss
     learning_rate = 2e-5
     pred_len = 6
@@ -46,9 +46,9 @@ class reg_param:
         "相对湿度（%）",
     ]
     target = "实际功率(MW)"
-    data_p = Path("~/bbbb/data")
-    model = "/bbbb/model/regression_lstm"
-    model_represent = "/bbbb/model/represent_lstm"
+    data_p = "" # the path of train data
+    model = "" # the model of the regression stage
+    model_represent = "" # the well-trained model of the pre-training stage
     batch_size = 64  # 88888: 3, m_loss
     learning_rate = 2e-5
     pred_len = 6

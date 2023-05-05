@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="10.193.0.186" id="3c2154b0-a13c-4b24-a12f-390c595e0e13" port="10500" customName="bbbb" nameFormat="CUSTOM" useOpenSSHConfig="true">
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="10.193.0.186" id="3c2154b0-a13c-4b24-a12f-390c595e0e13" port="10500" customName="bbbb" nameFormat="CUSTOM" useOpenSSHConfig="true">
         <option name="customName" value="bbbb" />
       </sshConfig>
     </configs>

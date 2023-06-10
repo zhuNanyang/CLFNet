@@ -21,7 +21,7 @@ class represent_param:
     data_p = "" # the path of train data
 
     model_p = "" # the model of pre-training stage
-    batch_size = 64  # 88888: 3, m_loss
+    batch_size = 64 
     learning_rate = 2e-5
     pred_len = 6
     label_len = 0
@@ -49,7 +49,7 @@ class reg_param:
     data_p = "" # the path of train data
     model = "" # the model of the regression stage
     model_represent = "" # the well-trained model of the pre-training stage
-    batch_size = 64  # 88888: 3, m_loss
+    batch_size = 64 
     learning_rate = 2e-5
     pred_len = 6
     label_len = 0
